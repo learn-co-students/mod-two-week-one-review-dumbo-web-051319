@@ -1,4 +1,4 @@
-class CreateSeas < ActiveRecord::Migration
+class CreateSeas < ActiveRecord::Migration[5.1]
   def change
     create_table :seas do |t|
       t.string :name
@@ -12,6 +12,3 @@ class CreateSeas < ActiveRecord::Migration
     end
   end
 end
-
-rails generate migration create_seas name temperature:float bio:text
-rails generate migration add_mood_to_seas
